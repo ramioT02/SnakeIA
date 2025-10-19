@@ -1,3 +1,4 @@
 .DS_Store 
 venv
 snake_dqn.pth
+_pycache__
