@@ -34,7 +34,7 @@ def render(screen, font, info, env):
     txt = font.render(info, True, WHITE)
     screen.blit(txt, (10, 10))
 
-def run_play():
+def run_play(args=None):
     pygame.init()
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("Snake Sim")
@@ -90,6 +90,8 @@ def run_play():
         render(screen, font, info, env)
         pygame.display.flip()
         clock.tick(FPS_TRAIN if training else FPS_VIS)
+
+        pass
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
